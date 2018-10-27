@@ -84,7 +84,7 @@ app.post('/adduser', async (req, res, next) => {
     if (err) throw err;
     else
       console.log(result);
-    res.send("user Added successfully");
+    res.send({"status":"user Added successfully"});
   });
 });
 
